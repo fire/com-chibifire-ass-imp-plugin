@@ -263,18 +263,7 @@ sample/.import/*
 .sconsign.dblite
 build/
 sample/**/*.import
-FBX SDK/
-bazel-bin/
-bazel-out/
-bazel-resourceimporterfbx/
-/cpp_bindings
-/godot_fork
-/godot_headers
-/CppBindings/
 /GodotHeaders/
 /Godot/
 /.repo
-/thirdparty
-/bazel-fbx
-/sample/addons/ComChibifireFBXImporter/lib/ComChibifireFbxImporter.dll
-/bazel-com-chibifire-fbx-plugin/
+/thirdparty/assimp/
