@@ -21,9 +21,6 @@
 
 // -- Godot Engine <https://godotengine.org>
 
-// Major portions from the main source file of fbx2glTF.
-// See licenses.
-
 // clang-format off
 #include <Reference.hpp>
 #include <Godot.hpp>
