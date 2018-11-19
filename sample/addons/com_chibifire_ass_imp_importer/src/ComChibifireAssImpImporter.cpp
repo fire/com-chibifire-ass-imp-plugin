@@ -63,6 +63,7 @@ using godot::Ref;
 Array ComChibifireAssImpImporter::get_extensions() const {
 	PoolStringArray arr;
 	arr.push_back("fbx");
+	arr.push_back("blend");
 	return Array(arr);
 }
 
@@ -86,7 +87,7 @@ Node *ComChibifireAssImpImporter::import_scene(const String path, const int64_t 
 	}
 	exporter.Export(scene, "glb2", gltf_global.alloc_c_string(), aiProcess_GlobalScale, &properties);
 	Spatial *custom = (Spatial *)owner->import_scene_from_other_importer(gltf_path, flags, bake_fps);
-	if (path.get_extension() == "fbx") {
+	if (path.get_extension() == "fbx" || path.get_extension() == "blend") {
 		custom->set_rotation_degrees(custom->get_rotation_degrees() + Vector3(-90.0f, 0.0f, 0.0f));
 	}
 	return custom;
