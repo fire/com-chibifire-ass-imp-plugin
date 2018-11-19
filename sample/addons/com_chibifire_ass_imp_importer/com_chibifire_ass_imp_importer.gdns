@@ -1,0 +1,10 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://addons/com_chibifire_ass_imp_importer/com_chibifire_ass_imp_importer.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+
+resource_name = "ComChibifireAssImpImporter"
+class_name = "ComChibifireAssImpImporter"
+library = ExtResource( 1 )
+

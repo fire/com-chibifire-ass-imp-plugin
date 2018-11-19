@@ -1,0 +1,14 @@
+[general]
+
+symbol_prefix="godot_"
+singleton=false
+load_once=true
+reloadable=false
+
+[entry]
+
+Windows.64="res://addons/com_chibifire_ass_imp_importer/bin/windows.64/com_chibifire_ass_imp_importer.dll"
+
+[dependencies]
+
+Windows.64=[  ]
