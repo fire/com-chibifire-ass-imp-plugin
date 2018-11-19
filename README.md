@@ -1,3 +1,3 @@
-# Godot Fbx importer
+# Godot Asset Import importer
 
-A fbx importer for godot. The plugin converts from fbx to gltf2. 
+An Asset Importer for godot. The plugin converts from various 3d formats to gltf2.
