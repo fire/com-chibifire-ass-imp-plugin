@@ -59,4 +59,9 @@ ${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/godot-cpp/bin/libgodot-cpp.windows.releas
 ${CMAKE_CURRENT_BINARY_DIR}/assimp/lib/assimp-vc140-mt.lib
 ${CMAKE_CURRENT_BINARY_DIR}/assimp/lib/IrrXML.lib
 ${CMAKE_CURRENT_BINARY_DIR}/assimp/lib/zlibstatic.lib)
+add_custom_command(
+        TARGET com_chibifire_ass_imp_importer POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy
+				${CMAKE_CURRENT_BINARY_DIR}/Release/com_chibifire_ass_imp_importer.dll
+                ${CMAKE_SOURCE_DIR}/sample/addons/com_chibifire_ass_imp_importer/bin/windows.64/com_chibifire_ass_imp_importer.dll)
 endif(MSVC)
